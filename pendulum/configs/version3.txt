@@ -1,0 +1,11 @@
+name = chaotic
+A = 0.1
+B = 1.0
+C = 2.0
+OMEGA = 1.2
+init_pos = 0.0
+init_vel = 0.1
+T = 500
+dt = 0.01
+l1 = 1.0
+output_plot = plots/phase_v3_chaotic.png
