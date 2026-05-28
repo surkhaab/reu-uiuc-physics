@@ -60,3 +60,7 @@ Then run it with:
 ```bash
 ./fluid_dynamics.py --obstacle myshape
 ```
+
+## Credits
+
+Based on problem designed by Bryan Clark, adapted into a standalone Python script with Numba JIT acceleration by Surkhab Kaur, 2026.
