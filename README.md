@@ -134,6 +134,9 @@ Then run it with:
 ./fluid_dynamics.py --obstacle myshape
 ```
 
-## Credits
-Single Pendulum: Originally developed as a course exercise (PHYS 246) by Bryan Clark, George Gollin and Ryan Levy (UIUC), adapted and extended by Surkhab Kaur, 2026.
-LBM Fluid Dynamics: Originally developed as a course exercise (PHYS 246) by Bryan Clark (UIUC), adapted and extended by Surkhab Kaur, 2026.
+## Acknowledgements
+ 
+Both simulations were originally developed as course exercises for PHYS 246 (UIUC), and adapted and extended by Surkhab Kaur, 2026.
+ 
+- Single Pendulum — Bryan Clark, George Gollin, and Ryan Levy
+- LBM Fluid Dynamics — Bryan Clark
