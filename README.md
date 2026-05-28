@@ -1,6 +1,9 @@
 # reu-uiuc-physics
 
 # LBM Flow Simulation
+Simulates 2D fluid flow around obstacles using the Lattice Boltzmann Method (LBM),
+a computational fluid dynamics technique that models fluid behavior at the mesoscopic
+scale. The simulation produces animated visualizations of the resulting flow fields for a variety of obstacle geometries.
 
 ## Installation
 
