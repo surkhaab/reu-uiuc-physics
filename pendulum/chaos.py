@@ -27,7 +27,7 @@ vel0  = float(params["init_vel"])
 T     = float(params["T"])
 dt    = float(params["dt"])
 name  = params["name"]
-outfile = params["output_plot"]
+outfile = params["output"]
 
 
 # --- Physics ---
@@ -63,6 +63,16 @@ vels = np.array(vels)
 
 # --- Save phase space plot ---
 os.makedirs(os.path.dirname(outfile), exist_ok=True)
+
+# Save final state to txt
+state_file = outfile.replace(".png", "_state.txt")
+state = np.column_stack([
+    np.array(ts),
+    np.array(poss),
+    np.array(vels)
+])
+np.savetxt(state_file, state, header="t  pos  vel", comments="#")
+print(f"Saved state → {state_file}")
 
 plt.figure(figsize=(6, 5))
 plt.scatter(poss, vels, s=0.5, alpha=0.6, color="steelblue")
