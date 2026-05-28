@@ -65,5 +65,5 @@ Then run it with:
 ```
 
 ## Credits
-
-Originally developed as a course exercise (PHYS 246) by Bryan Clark (UIUC), adapted and extended by Surkhab Kaur, 2026.
+Single Pendulum: Originally developed as a course exercise (PHYS 246) by Bryan Clark, George Gollin and Ryan Levy (UIUC), adapted and extended by Surkhab Kaur, 2026.
+LBM Fluid Dynamics: Originally developed as a course exercise (PHYS 246) by Bryan Clark (UIUC), adapted and extended by Surkhab Kaur, 2026.
