@@ -8,4 +8,4 @@ init_vel = 0.1
 T = 500
 dt = 0.01
 l1 = 1.0
-output_plot = plots/phase_v3_chaotic.png
+output = results/phase_v3_chaotic.png
