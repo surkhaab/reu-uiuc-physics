@@ -6,11 +6,16 @@ Simulates a driven damped pendulum across three physical regimes: undamped, damp
 ---
  
 ## Setup
- 
+
 ```bash
-conda create -n reu_workshop python=3.11
-conda activate reu_workshop
-pip install numpy matplotlib
+conda create -n reu python=3.11
+conda activate reu
+conda install numpy matplotlib pillow numba  # pillow and numba only needed for fluid dynamics
+conda install -c conda-forge ffmpeg  # optional, only needed for .mp4 output
+```
+
+```bash
+git clone git@github.com:surkhaab/reu-uiuc-physics.git
 ```
  
 ---
@@ -77,15 +82,6 @@ output_plot = plots/my_run.png
 Simulates 2D fluid flow around obstacles using the Lattice Boltzmann Method (LBM),
 a computational fluid dynamics technique that models fluid behavior at the mesoscopic
 scale. The simulation produces animated visualizations of the resulting flow fields for a variety of obstacle geometries.
-
-## Installation
-
-```bash
-conda create -n reu python=3.11
-conda activate reu
-conda install numpy matplotlib pillow numba  # pillow and numba only needed for fluid dynamics
-conda install -c conda-forge ffmpeg  # optional, only needed for .mp4 output
-```
 
 ## Usage
 
