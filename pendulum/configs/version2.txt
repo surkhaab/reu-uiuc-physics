@@ -10,4 +10,4 @@ init_vel = 0.1
 T = 120
 dt = 0.01
 l1 = 1.0
-output_plot = plots/phase_v2_damped.png
+output = results/phase_v2_damped.png
