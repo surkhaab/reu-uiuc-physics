@@ -62,7 +62,7 @@ init_vel = 0.1   # initial angular velocity (rad/s)
 T = 500          # total simulation time (s)
 dt = 0.01        # timestep (s)
 l1 = 1.0         # pendulum length (m)
-output_plot = plots/my_run.png
+output = results/my_run.png
 ```
  
 ---
