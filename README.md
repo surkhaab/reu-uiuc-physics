@@ -3,6 +3,76 @@
 # Single Pendulum Simulation
 Simulates a driven damped pendulum across three physical regimes: undamped, damped/driven, and chaotic.
 
+---
+ 
+## Setup
+ 
+```bash
+conda create -n reu_workshop python=3.11
+conda activate reu_workshop
+pip install numpy matplotlib
+```
+ 
+---
+ 
+## Project Structure
+ 
+```
+workshop/
+├── simulate.py          # simulation script (do not modify)
+├── configs/             # one .txt config file per run
+│   ├── version1_undamped.txt
+│   ├── version2_damped.txt
+│   └── version3_chaotic.txt
+└── plots/               # output phase space plots (created automatically)
+```
+ 
+---
+ 
+## Running a Simulation
+ 
+Pass a config file as the argument:
+ 
+```bash
+python3 simulate.py configs/version1_undamped.txt
+```
+ 
+The script reads the config, runs the simulation, and saves a phase space plot to the path specified in `output_plot`.
+ 
+---
+ 
+## Config File Format
+ 
+Plain text, one `key = value` per line. Lines starting with `#` are comments.
+ 
+```
+# example config
+name = my_run
+A = 0.1          # damping coefficient
+B = 1.0          # restoring force
+C = 2.0          # driving force amplitude
+OMEGA = 1.2      # driving frequency
+init_pos = 0.0   # initial angle (radians)
+init_vel = 0.1   # initial angular velocity (rad/s)
+T = 500          # total simulation time (s)
+dt = 0.01        # timestep (s)
+l1 = 1.0         # pendulum length (m)
+output_plot = plots/my_run.png
+```
+ 
+---
+ 
+## The Three Configs
+ 
+| File | Regime | Key parameters |
+|---|---|---|
+| `version1_undamped.txt` | Undamped, undriven | A=0, C=0 — simple harmonic motion |
+| `version2_damped.txt` | Damped and driven | A=0.1, C=0.1 — settles into periodic motion |
+| `version3_chaotic.txt` | Chaotic | A=0.1, C=2.0 — never settles, sensitive to initial conditions |
+ 
+---
+ 
+
 # LBM Flow Simulation
 Simulates 2D fluid flow around obstacles using the Lattice Boltzmann Method (LBM),
 a computational fluid dynamics technique that models fluid behavior at the mesoscopic
