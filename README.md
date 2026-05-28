@@ -63,4 +63,4 @@ Then run it with:
 
 ## Credits
 
-Based on problem designed by Bryan Clark, adapted into a standalone Python script with Numba JIT acceleration by Surkhab Kaur, 2026.
+Originally developed as a course exercise (PHYS 246) by Bryan Clark (UIUC), adapted and extended by Surkhab Kaur, 2026.
